@@ -1,13 +1,9 @@
-// https://msdn.microsoft.com/en-us/library/jj154905(v=vs.85).aspx
-
-
-
 var DB = function(){
 
 	window.indexedDB = window.indexedDB || window.mozIndexedDB || window.webkitIndexedDB || window.msIndexedDB;
 	window.IDBTransaction = window.IDBTransaction || window.webkitIDBTransaction || window.msIDBTransaction;
 	window.IDBKeyRange = window.IDBKeyRange || window.webkitIDBKeyRange || window.msIDBKeyRange;
-	// Não use "var indexedDB = ..." se você não está numa function.
+
 	if(!window.indexedDB){
 		console.warn("Seu navegador não oferece supote ao IndexedDB");
 	}
