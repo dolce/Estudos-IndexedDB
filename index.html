@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Indexed DB</title>
+	<meta name="description" content="Estudos relacionados a Indexed Database API">
+	<meta name="author" content="Marcelo Dolce" />
+	<script src="js/IndexedDB.js"></script>
+</head>
+<body>
+
+	<style>
+	body{
+		font-family: arial;
+		text-align: center;
+		background: #bbb;
+	}
+	hr{
+		border: 0;
+		border-bottom: 1px solid #ddd;
+	}
+	button{
+		padding: 10px;
+		margin: 2px;
+		cursor: pointer;
+	}
+	</style>
+	<h1>IndexedDB</h1>
+	<p>
+		Open the browser <b>console</b> for more details.
+	</p>
+	<button id="startDatabase"> Create Database </button>
+	<br>
+	<button id="dropDatabase"> Drop Database </button>
+	<hr>	
+	<button id="insertRoute"> Insert 'Routes' </button>
+	<br>
+	<button id="insertCoordinates"> Insert Coordinates to Route: <b id="lastInsertedRouteID"></b> </button>
+	<br>
+	<button id="insertRouteCoordinates"> Insert Route + Coordinates </button>	
+	<hr>
+	<button id="removeRoute"> Remove Route </button>
+	<br>
+	<button id="removeCoordinates"> Remove Coordinates </button>
+	<hr>
+	<button id="getLastInsertedRegister"> get Last Inserted Register </button>
+	<hr>
+	<button id="getRoute"> get 'Route' </button>
+	<br>
+	<button id="getRoutes"> get 'Routes' </button>
+	<br>
+	<button id="getCoordinates"> List 'Coordinates' </button>
+
+	<div id="result"></div>
+	<script src="js/demo.js"></script>
+</body>
+</html>
